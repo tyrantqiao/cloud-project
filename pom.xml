@@ -11,6 +11,7 @@
     <modules>
         <module>cloud-eureka</module>
         <module>cloud-config</module>
+        <module>cloud-admin</module>
     </modules>
 
     <parent>

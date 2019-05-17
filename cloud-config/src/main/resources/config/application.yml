@@ -1,29 +1,36 @@
 server:
   port: 8888
 
-#spring:
-#  application:
-#    name: cloudE-config-server
-#  cloud:
-#      config:
-#        server:
-#          git:
-#            uri: https://github.com/tyrantqiao/cloud.git
-#            searchPaths: cloudE-config-repo
-#            lable: master
-
-#使用本地属性文件
-#属性文件地址，只要指定文件夹的路径
 spring:
   application:
-    name: cloud-config
-  profiles:
-    active: native
+    name: cloudE-config
   cloud:
     config:
       server:
-        native:
-          search-locations: classpath:/properties/
+        git:
+          uri: https://github.com/tyrantqiao/cloud-project
+          searchPaths: cloud-config/src/main/resources/properties
+          default-label: master
+          skip-ssl-validation: true
+#            default-label: master
+#            repos:
+#              development:
+#                pattern:
+#                  - '*/*dev*'
+#                uri: https://github.com/development/config-repo
+
+#使用本地属性文件
+#属性文件地址，只要指定文件夹的路径
+#spring:
+#  application:
+#    name: cloud-config
+#  profiles:
+#    active: native
+#  cloud:
+#    config:
+#      server:
+#        native:
+#          search-locations: classpath:/properties/
 
 
 eureka:
@@ -32,4 +39,3 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
-

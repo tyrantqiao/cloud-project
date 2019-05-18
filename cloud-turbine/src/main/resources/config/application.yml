@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: cloud-turbine
+  cloud:
+    config:
+      uri: http://localhost:8888
+
+eureka:
+  instance:
+    prefer-ip-address: true
+
+server:
+  port: 8031
+
+turbine:
+  app-config: cloud-ucenter-provider,cloud-pay-provider
+  aggregator:
+    cluster-config: default
+  cluster-name-expression: new String("default")
+
+
+
+

@@ -15,6 +15,7 @@
         <module>cloud-hystrix</module>
         <module>cloud-turbine</module>
         <module>cloud-zuul</module>
+        <module>cloud-mapper</module>
     </modules>
 
     <parent>
@@ -69,6 +70,13 @@
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>
             <version>2.11.2</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.8</version>
+            <scope>provided</scope>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
         <dependency>

@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="cloud-mapper" />
         <module name="cloud-zuul" />
-        <module name="cloud-hystrix" />
         <module name="cloud-turbine" />
-        <module name="cloud-eureka" />
+        <module name="cloud-hystrix" />
         <module name="cloud-admin" />
+        <module name="cloud-eureka" />
         <module name="cloud-config" />
       </profile>
     </annotationProcessing>
@@ -21,6 +22,7 @@
       <module name="cloud-config" options="-parameters" />
       <module name="cloud-eureka" options="-parameters" />
       <module name="cloud-hystrix" options="-parameters" />
+      <module name="cloud-mapper" options="-parameters" />
       <module name="cloud-turbine" options="-parameters" />
       <module name="cloud-zuul" options="-parameters" />
     </option>

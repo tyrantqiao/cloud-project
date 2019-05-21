@@ -17,5 +17,5 @@ public interface UserMapper {
      * @return
      */
     @Select("select username,id,password from User where username=#{username}")
-    User select(@Param("username") String username);
+    User selectOne(@Param("username") String username);
 }

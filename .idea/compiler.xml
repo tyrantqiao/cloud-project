@@ -7,13 +7,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="cloud-mapper" />
         <module name="cloud-zuul" />
         <module name="cloud-hystrix" />
-        <module name="cloud-config" />
+        <module name="cloud-turbine" />
         <module name="cloud-eureka" />
         <module name="cloud-admin" />
-        <module name="cloud-mapper" />
-        <module name="cloud-turbine" />
+        <module name="cloud-config" />
       </profile>
     </annotationProcessing>
   </component>

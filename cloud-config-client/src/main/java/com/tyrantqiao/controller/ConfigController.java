@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
  * contact: tyrantqiao@icloud.com
  */
 @RestController
-//@RequestMapping("/config")
 public class ConfigController {
     @Value("${message}")
     private String message;

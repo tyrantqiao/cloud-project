@@ -20,25 +20,25 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 @EnableDiscoveryClient
 @SpringBootApplication
-//@MapperScan("com.tyrantqiao.mapper")
-public class SampleAnnotationApplication {
-//    private final UserMapper userMapper;
-//
-//    @Autowired
-//    public SampleAnnotationApplication(UserMapper userMapper) {
-//        this.userMapper = userMapper;
-//    }
-//
-//    @Override
-//    public void run(String... args) {
-//        System.out.println(this.userMapper.selectOne("qiao"));
-//    }
-//
-//    @Autowired
-//    void setEnvironment(Environment env) {
-//        System.out.println("my-config.appName from env: "
-//                + env.getProperty("cloud-config.mapper"));
-//    }
+@MapperScan("com.tyrantqiao.mapper")
+public class SampleAnnotationApplication implements CommandLineRunner {
+    private final UserMapper userMapper;
+
+    @Autowired
+    public SampleAnnotationApplication(UserMapper userMapper) {
+        this.userMapper = userMapper;
+    }
+
+    @Override
+    public void run(String... args) {
+        System.out.println(this.userMapper.selectOne("qiao"));
+    }
+
+    @Autowired
+    void setEnvironment(Environment env) {
+        System.out.println("my-config.appName from env: "
+                + env.getProperty("cloud-config.mapper"));
+    }
 
     public static void main(String[] args) {
         SpringApplication.run(SampleAnnotationApplication.class, args);

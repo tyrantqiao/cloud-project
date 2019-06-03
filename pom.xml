@@ -16,6 +16,7 @@
         <module>cloud-turbine</module>
         <module>cloud-zuul</module>
         <module>cloud-mapper</module>
+        <module>cloud-config-client</module>
     </modules>
 
     <parent>

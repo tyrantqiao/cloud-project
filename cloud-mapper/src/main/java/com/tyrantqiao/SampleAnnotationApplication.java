@@ -20,7 +20,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 @EnableDiscoveryClient
 @SpringBootApplication
-@MapperScan("com.tyrantqiao.mapper")
+//@MapperScan("com.tyrantqiao.mapper")
 public class SampleAnnotationApplication {
 //    private final UserMapper userMapper;
 //

@@ -11,6 +11,7 @@
         <module name="cloud-zuul" />
         <module name="cloud-hystrix" />
         <module name="cloud-turbine" />
+        <module name="cloud-config-client" />
         <module name="cloud-eureka" />
         <module name="cloud-admin" />
         <module name="cloud-config" />
@@ -21,6 +22,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="cloud-admin" options="-parameters" />
       <module name="cloud-config" options="-parameters" />
+      <module name="cloud-config-client" options="-parameters" />
       <module name="cloud-eureka" options="-parameters" />
       <module name="cloud-hystrix" options="-parameters" />
       <module name="cloud-mapper" options="-parameters" />
